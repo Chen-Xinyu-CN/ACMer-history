@@ -67,14 +67,12 @@ int main()
         else{
             printf("%lld ",2);
         }
-        //caluate MAX
         LL temp=n;LL cnt=0;
         while(temp){
             cnt++;
             temp>>=1;
         }
         n=qpow(2,cnt)-1;
-        //cout<<"qpow: "<<n<<endl;
         if(num%2==0){
             printf("%lld\n",n^2);
         }
@@ -97,3 +95,7 @@ LL qpow(LL a,LL n)
     }
     return ans;
 }
+
+/*
+something new
+*/
